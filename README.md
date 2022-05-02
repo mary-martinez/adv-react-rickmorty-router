@@ -1,6 +1,6 @@
-#Rick and Morty
+# Rick and Morty
 
-##Plan
+## Plan
 1) Write a test for
 - loading
 - click
