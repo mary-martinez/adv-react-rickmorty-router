@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import CharacterCard from '../../components/CharacterCard';
 import { fetchCharacters } from '../../services/fetchData';
 
 export default function CharacterList() {
@@ -21,7 +22,7 @@ export default function CharacterList() {
       <h2>CharacterList</h2>
       {loading && <p>Loading...</p>}
       {characters.map((character) => (
-        <h3 key={character.id}>{character.name}</h3>
+        <CharacterCard key={character.id} {...{character}} />
       ))}
     </div>
   )
