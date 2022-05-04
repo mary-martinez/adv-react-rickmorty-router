@@ -8,6 +8,7 @@ export default function CharacterCard({ character }) {
       <p>From: {character.origin.name}</p>
       <p>Status: {character.status}</p>
       {character.episode.length === 1 ? <p>In 1 episode.</p> : <p>In {character.episode.length} episodes.</p>}
+      
     </>
   )
 }
