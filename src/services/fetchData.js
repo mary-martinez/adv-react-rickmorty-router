@@ -5,7 +5,6 @@ export async function fetchCharacters() {
 }
 
 export async function fetchCharacter(id) {
-  console.log(id, 'that so fetch');
   const resp = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
   const data = await resp.json();
   return data;

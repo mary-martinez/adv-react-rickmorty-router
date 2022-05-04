@@ -11,7 +11,6 @@ export default function CharacterDetails() {
 
   useEffect(() => {
     const fetchCharacterData = async () => {
-      console.log(id);
       const resp = await fetchCharacter(id);
       setCharacter(resp);
       setLoading(false);
